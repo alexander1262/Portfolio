@@ -1,0 +1,204 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(56, 56, 56);
+    font-family: 'Convergence', sans-serif;
+}
+
+.header {
+    background-color: purple;
+    position: fixed;
+    width: 100vw;
+    font-size: 1.3rem;
+    height: 7vh;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.headerButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+.listItemButton {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.buttonHeader {
+    color:blanchedalmond;
+}
+
+.buttonHeader:hover {
+    color:aqua;
+}
+
+.jumbotron {
+    color: white;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbotronCenter {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameHeader {
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    padding-top: 400px;
+}
+
+.titleHeader {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+.skillsSection {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#skillsTitle {
+    font-size: 5rem;
+}
+
+.skillsSmallerTitles {
+    color:rgb(221, 151, 0);
+    font-size: 3rem;
+    padding-top: 20px;
+}
+
+.skillsText {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.skillsSection p {
+    background-color: rgb(32, 32, 32);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.skillsText img {
+    background-color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 8px 8px black;
+    margin: 5px;
+}
+
+.skillsText img:hover {
+    scale: 1.1;
+}
+
+.projectsTitle {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+.projectBoxes {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   max-width: 600px;
+   height: 400px;
+   background-color: rgb(32, 32, 32);
+   color: white;
+}
+
+.individualProjectTitle {
+    font-size: 2rem;
+    color:rgb(221, 151, 0);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.projectImage {
+    display: block;
+    margin: 5px;
+}
+
+.buttonBoxes {
+    display: block;
+}
+
+.liveButtons {
+    background-color: rgb(0, 162, 255);
+    margin: 4px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.liveButtons:hover {
+    background-color: aqua;
+    transition: .5s;
+}
+
+
+.githubButtons {
+    background-color: rgb(221, 151, 0);
+    margin: 4px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.githubButtons:hover {
+    background-color: rgb(255, 195, 106);
+    transition: .5s;
+}
+
+
+.projectSmallTitle {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5rem;
+    color:rgb(221, 151, 0)
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .skillsText {
+        flex-wrap: wrap;
+    }
+}
